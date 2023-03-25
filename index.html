@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar">
@@ -20,7 +22,7 @@
         <img src="images/agenone-logo.png" alt="" />
         <div class="navbar_items">
           <a href="#hero_section">Home</a>
-          <a href="http://">Services</a>
+          <a href="#services">Services</a>
           <a href="http://">Project</a>
           <a href="http://">About Us</a>
         </div>
@@ -50,25 +52,25 @@
         <div class="banner container-lg">
           <h2 class="text-white text-center">Benefit of improving your business</h2>
           <div class="row">
-            <div class="col-lg-3 col-12 card_icons">
+            <div class="col-lg-3 col-12 card_icons" data-aos="fade-up" data-aos-duration="1500">
               <div class="icons">
                 <img src="images/icons/expand-icons.png" alt="" />
               </div>
               <h5>Expanding the Market</h5>
             </div>
-            <div class="col-lg-3 col-12 card_icons">
+            <div class="col-lg-3 col-12 card_icons" data-aos="fade-up" data-aos-duration="1500">
               <div class="icons">
                 <img src="images/icons/cash-icons.png" alt="" />
               </div>
               <h5>Cost-Effective</h5>
             </div>
-            <div class="col-lg-3 col-12 card_icons">
+            <div class="col-lg-3 col-12 card_icons" data-aos="fade-up" data-aos-duration="1500">
               <div class="icons">
                 <img src="images/icons/star-icons.png" alt="" />
               </div>
               <h5>More Professional</h5>
             </div>
-            <div class="col-lg-3 col-12 card_icons">
+            <div class="col-lg-3 col-12 card_icons" data-aos="fade-up" data-aos-duration="1500">
               <div class="icons">
                 <img src="images/icons/user-icons.png" alt="" />
               </div>
@@ -78,6 +80,127 @@
         </div>
       </div>
     </section>
+    <section class="services" id="services">
+      <div class="container-lg">
+        <h1 class="text-center fw-bold">The Services We Offer <span class="text_gradient">For You</span></h1>
+        <div class="card_services show">
+          <div class="card_title">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <h3 class="text_gradient">01</h3>
+              </div>
+              <div class="col-8 col-lg-10">
+                <h3 class="text_gradient">UI/UX Design</h3>
+              </div>
+              <div class="col-2 col-lg-1 text-center">
+                <i class="fa-solid fa-arrow-down card_services_btn text_gradient"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card_body">
+            <div class="row">
+              <div class="col-2 col-lg-1"></div>
+              <div class="col-8 col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic nam eos doloribus, adipisci repellendus mollitia consequatur numquam soluta. Odit alias vel vero, saepe praesentium blanditiis ducimus delectus itaque
+                  nam?
+                </p>
+                <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=852&q=80" />
+              </div>
+              <div class="col-2 col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_services hide">
+          <div class="card_title">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <h3 class="text_gradient">02</h3>
+              </div>
+              <div class="col-8 col-lg-10">
+                <h3 class="text_gradient">Digital Marketing</h3>
+              </div>
+              <div class="col-2 col-lg-1 text-center">
+                <i class="fa-solid fa-arrow-down card_services_btn text_gradient"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card_body">
+            <div class="row">
+              <div class="col-2 col-lg-1"></div>
+              <div class="col-8 col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic nam eos doloribus, adipisci repellendus mollitia consequatur numquam soluta. Odit alias vel vero, saepe praesentium blanditiis ducimus delectus itaque
+                  nam?
+                </p>
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+              </div>
+              <div class="col-2 col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_services hide">
+          <div class="card_title">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <h3 class="text_gradient">03</h3>
+              </div>
+              <div class="col-8 col-lg-10">
+                <h3 class="text_gradient">Social Media Management</h3>
+              </div>
+              <div class="col-2 col-lg-1 text-center">
+                <i class="fa-solid fa-arrow-down card_services_btn text_gradient"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card_body">
+            <div class="row">
+              <div class="col-2 col-lg-1"></div>
+              <div class="col-8 col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic nam eos doloribus, adipisci repellendus mollitia consequatur numquam soluta. Odit alias vel vero, saepe praesentium blanditiis ducimus delectus itaque
+                  nam?
+                </p>
+                <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+              </div>
+              <div class="col-2 col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_services hide">
+          <div class="card_title">
+            <div class="row">
+              <div class="col-2 col-lg-1">
+                <h3 class="text_gradient">04</h3>
+              </div>
+              <div class="col-8 col-lg-10">
+                <h3 class="text_gradient">Development</h3>
+              </div>
+              <div class="col-2 col-lg-1 text-center">
+                <i class="fa-solid fa-arrow-down card_services_btn text_gradient"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card_body">
+            <div class="row">
+              <div class="col-2 col-lg-1"></div>
+              <div class="col-8 col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam hic nam eos doloribus, adipisci repellendus mollitia consequatur numquam soluta. Odit alias vel vero, saepe praesentium blanditiis ducimus delectus itaque
+                  nam?
+                </p>
+                <img src="https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+              </div>
+              <div class="col-2 col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Javascript -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -89,10 +212,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script>
       $(document).ready(function () {
         $(".navbar_btn").click(function () {
           $(".navbar").toggleClass("show");
+        });
+
+        // Element Card pada section services
+        $(".card_services").each(function () {
+          $(this).click(function () {
+            $(this).toggleClass("show");
+            $(this).toggleClass("hide");
+          });
         });
       });
     </script>

@@ -52,7 +52,8 @@ nav {
   background-image: url("images/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5rem;
+  padding: 5.5rem 0;
+  z-index: 1;
   .hero_container {
     display: flex;
     justify-content: center;
@@ -86,6 +87,54 @@ nav {
   }
 }
 
+.services {
+  padding: 4rem 0;
+  .card_services {
+    background-color: #f8f8f8;
+    border-radius: 2rem;
+    cursor: pointer;
+    .card_title {
+      padding: 1rem;
+      i {
+        font-size: 28px;
+      }
+    }
+    .card_body {
+      padding: 1rem 0;
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 1rem;
+        border-radius: 1rem;
+      }
+    }
+    .hide {
+      display: none;
+    }
+  }
+}
+
+.show {
+  .card_services_btn {
+    transform: rotate(-180deg);
+    animation: getRotate- 0.5s ease;
+  }
+  .card_body {
+    display: block;
+  }
+}
+
+.hide {
+  .card_services_btn {
+    transform: rotate(0deg);
+    animation: getRotate 0.5s ease;
+  }
+  .card_body {
+    display: none;
+  }
+}
+
 @media (max-width: 1023px) {
   nav {
     padding: 0.5rem 0 !important;
@@ -115,7 +164,7 @@ nav {
       left: 0;
     }
   }
-
+  // Hero Section
   .hero_section {
     .hero_container {
       p {
@@ -136,6 +185,18 @@ nav {
             height: 4rem;
           }
         }
+      }
+    }
+  }
+
+  // Card Services
+  .card_services {
+    margin: 1rem 0;
+    .card_body {
+      padding: 0 !important;
+      padding-bottom: 1rem !important;
+      img {
+        height: 185px;
       }
     }
   }
@@ -170,11 +231,10 @@ nav {
       }
     }
   }
-
   // Hero Section
   .hero_section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     .hero_container {
       .banner {
         background-image: url("images/hero-banner.png");
@@ -190,6 +250,13 @@ nav {
       }
     }
   }
+  // Card Services
+  .card_services {
+    margin: 1.5rem;
+    img {
+      height: 350px;
+    }
+  }
 }
 
 @keyframes getHover {
@@ -198,5 +265,21 @@ nav {
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes getRotate {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes getRotate- {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
   }
 }

@@ -50,7 +50,8 @@ nav {
   background-image: url("images/hero-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5rem;
+  padding: 5.5rem 0;
+  z-index: 1;
 }
 .hero_section .hero_container {
   display: flex;
@@ -82,6 +83,50 @@ nav {
   font-weight: 500;
   line-height: 1.5;
   margin: 0;
+}
+
+.services {
+  padding: 4rem 0;
+}
+.services .card_services {
+  background-color: #f8f8f8;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.services .card_services .card_title {
+  padding: 1rem;
+}
+.services .card_services .card_title i {
+  font-size: 28px;
+}
+.services .card_services .card_body {
+  padding: 1rem 0;
+}
+.services .card_services .card_body img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.services .card_services .hide {
+  display: none;
+}
+
+.show .card_services_btn {
+  transform: rotate(-180deg);
+  animation: getRotate- 0.5s ease;
+}
+.show .card_body {
+  display: block;
+}
+
+.hide .card_services_btn {
+  transform: rotate(0deg);
+  animation: getRotate 0.5s ease;
+}
+.hide .card_body {
+  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -130,6 +175,16 @@ nav {
     width: 4rem;
     height: 4rem;
   }
+  .card_services {
+    margin: 1rem 0;
+  }
+  .card_services .card_body {
+    padding: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+  .card_services .card_body img {
+    height: 185px;
+  }
 }
 @media (min-width: 1024px) {
   .navbar_btn {
@@ -156,7 +211,7 @@ nav {
   }
   .hero_section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   .hero_section .hero_container .banner {
     background-image: url("images/hero-banner.png");
@@ -168,6 +223,12 @@ nav {
     width: 5rem;
     height: 5rem;
   }
+  .card_services {
+    margin: 1.5rem;
+  }
+  .card_services img {
+    height: 350px;
+  }
 }
 @keyframes getHover {
   0% {
@@ -175,5 +236,21 @@ nav {
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes getRotate {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes getRotate- {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
   }
 }/*# sourceMappingURL=style.css.map */
