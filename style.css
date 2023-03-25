@@ -129,6 +129,14 @@ nav {
   display: none;
 }
 
+.achievement {
+  padding: 4rem 0;
+  background-image: url("images/achievement-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media (max-width: 1023px) {
   nav {
     padding: 0.5rem 0 !important;
@@ -149,6 +157,9 @@ nav {
     padding: 1rem 0;
     color: #0c111f;
     border-bottom: 1px solid #0c111f;
+  }
+  nav i {
+    font-size: 24px;
   }
   nav .contact_btn {
     display: none;
@@ -184,6 +195,30 @@ nav {
   }
   .card_services .card_body img {
     height: 185px;
+  }
+  .achievement .container-lg {
+    display: grid;
+    gap: 32px;
+  }
+  .achievement .container-lg h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .achievement .container-lg .row_achievement {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .achievement .container-lg .row_achievement .card_achievement {
+    background: linear-gradient(to right, #38c682, #00796d);
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  .achievement .container-lg .row_achievement .card_achievement h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -2%;
+    margin-bottom: 8px;
   }
 }
 @media (min-width: 1024px) {
@@ -228,6 +263,27 @@ nav {
   }
   .card_services img {
     height: 350px;
+  }
+  .achievement .container-lg {
+    display: grid;
+    gap: 64px;
+  }
+  .achievement .container-lg h1 {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -2%;
+  }
+  .achievement .container-lg .row_achievement {
+    background: linear-gradient(to right, #38c682, #00796d);
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+  .achievement .container-lg .row_achievement .card_achievement h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -2%;
   }
 }
 @keyframes getHover {

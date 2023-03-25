@@ -21,10 +21,10 @@
       <div class="container">
         <img src="images/agenone-logo.png" alt="" />
         <div class="navbar_items">
-          <a href="#hero_section">Home</a>
-          <a href="#services">Services</a>
-          <a href="http://">Project</a>
-          <a href="http://">About Us</a>
+          <a class="navbar_links" href="#hero_section">Home</a>
+          <a class="navbar_links" href="#services">Services</a>
+          <a class="navbar_links" href="http://">Project</a>
+          <a class="navbar_links" href="http://">About Us</a>
         </div>
         <div>
           <button type="button" class="contact_btn">Contact Us</button>
@@ -80,9 +80,12 @@
         </div>
       </div>
     </section>
+
     <section class="services" id="services">
       <div class="container-lg">
         <h1 class="text-center fw-bold">The Services We Offer <span class="text_gradient">For You</span></h1>
+        
+        <!-- Card UI/UX Design -->
         <div class="card_services show">
           <div class="card_title">
             <div class="row">
@@ -111,7 +114,7 @@
             </div>
           </div>
         </div>
-
+        <!-- Card Digital Marketing -->
         <div class="card_services hide">
           <div class="card_title">
             <div class="row">
@@ -140,7 +143,7 @@
             </div>
           </div>
         </div>
-
+        <!-- Card Social Media Management -->
         <div class="card_services hide">
           <div class="card_title">
             <div class="row">
@@ -169,7 +172,7 @@
             </div>
           </div>
         </div>
-
+        <!-- Card Development -->
         <div class="card_services hide">
           <div class="card_title">
             <div class="row">
@@ -201,29 +204,57 @@
       </div>
     </section>
 
-    <!-- Javascript -->
-    <script src="script.js"></script>
+    <section class="achievement" id="achievement">
+      <div class="container-lg">
+        <h1>We are passionate about helping businesses grow and succeed in the digital age. We take pride in our work and strive to exceed your expectations every time.</h1>
+        <div class="row row_achievement">
+          <div class="col-lg-3 col-12 text-center card_achievement" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-white">10+</h1>
+            <h5 class="text-white">Years of Experiences</h5>
+          </div>
+          <div class="col-lg-3 col-12 text-center card_achievement" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-white">666+</h1>
+            <h5 class="text-white">Project Completed</h5>
+          </div>
+          <div class="col-lg-3 col-12 text-center card_achievement" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-white">555+</h1>
+            <h5 class="text-white">Satisfied Client</h5>
+          </div>
+          <div class="col-lg-3 col-12 text-center card_achievement" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-white">10+</h1>
+            <h5 class="text-white">Awards Achieved</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/319e023004.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
       integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
+    <!-- Javascript -->
     <script>
       $(document).ready(function () {
         $(".navbar_btn").click(function () {
           $(".navbar").toggleClass("show");
         });
+        $('.navbar_links').click(function () {
+          $(".navbar").toggleClass("show");
+        });
+
 
         // Element Card pada section services
         $(".card_services").each(function () {
